@@ -1,0 +1,5 @@
+#ignore Doxygen(Documentation API check extension) output
+html/
+latex/
+*.log
+Doxyfile
