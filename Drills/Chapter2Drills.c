@@ -219,10 +219,10 @@ int main(){
 /**
  * @brief returns x with the n bits that begin at position p inverted, leaving the others unchanged
  * 
- * @param x - the binaric number
- * @param p - location
- * @param n -amount of bits
- * @return unsigned 
+ * @param x - the integer number
+ * @param p - location from which bit to start
+ * @param n -amount of bits to invert
+ * @return unsigned value of x with specific bits inverted
  */
 unsigned invert(unsigned x, int p, int n){
     return(x ^ (~(~0<<n))<<(p-n+1));
@@ -231,6 +231,7 @@ unsigned invert(unsigned x, int p, int n){
 /**
 * @name Exercise 2-8
 * @brief returns the value of the integer x rotated to the right by n bit positions
+* @details unlike shifting right, rotating we dont wnat to destory the bits value so when rotating,the function will make the most right bit to be the most left bit
 */
 #include <stdio.h>
 unsigned rightrot(unsigned x, int n);
@@ -250,12 +251,22 @@ int main(){
 /**
  * @brief returns the value of the integer x rotated to the right by n bit positions
  * 
- * @param x - the binaric number
- * @param n - amount of bits
- * @return unsigned 
+ * @param x - the integer number
+ * @param n - amount of bits to rotate
+ * @return unsigned rotated value
  */
 unsigned rightrot(unsigned x, int n){
-    return (x>>n);
+    int i;
+    for ( i = 0; i < n; i++)
+    {
+        if((x & 1) == 1)
+            x = (x>>1) | ~(~0U >> 1) ;
+        else{
+            x = (x>>1);
+        } 
+    }
+    
+    return x;
 }
 
 
