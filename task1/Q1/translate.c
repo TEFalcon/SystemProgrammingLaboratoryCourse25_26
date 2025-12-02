@@ -20,7 +20,7 @@
 void translate_dec(char s[]);
 void printBinFromDec(unsigned int deci_num);
 
-#define MAX_BUFFER 10 // max digits that the range of unsigned int can have
+#define MAX_BUFFER 10 /* max digits that the range of unsigned int can have*/
 
 /**
  * @brief uses a decimal number input from user or file to translate it to a binaric base
@@ -29,7 +29,7 @@ void printBinFromDec(unsigned int deci_num);
  */
 int main()
 {
-    char buffer[MAX_BUFFER + 3]; // the input from the user, has extra space for newline or '\0'
+    char buffer[MAX_BUFFER + 3]; /* the input from the user, has extra space for newline or '\0' */
     printf("Enter up to %d digits, to stop - Ctrl +D or EOF \n", (MAX_BUFFER - 1));
     while (fgets(buffer, MAX_BUFFER +2, stdin) != NULL )
     {
@@ -51,9 +51,9 @@ int main()
  */
 void translate_dec(char s[])
 {
-    unsigned int i = 0, deci_num = 0;//i - runner, the decimal number - from the string input
-    // implimenting atoi
-    while (s[i] != '\0' && s[i] != '\n')
+    unsigned int i = 0, deci_num = 0;/*i - runner, the decimal number - from the string input*/
+    
+    while (s[i] != '\0' && s[i] != '\n')/* implimenting atoi*/
     {
         if (isdigit(s[i]))
             deci_num = (s[i] - '0') + deci_num * 10;
@@ -62,7 +62,7 @@ void translate_dec(char s[])
     }
     printf("your input is: %u\n The answer:\t", deci_num);
 
-    // printing in the right order
+    /* printing in the right order*/
     printBinFromDec(deci_num);
     printf("\n");
 }
