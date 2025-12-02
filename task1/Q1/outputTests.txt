@@ -1,0 +1,14 @@
+Enter up to 9 digits, to stop - Ctrl +D or EOF your input is: 111222333
+ The answer:	110101000010001111000111101
+your input is: 1234
+ The answer:	10011010010
+your input is: 99999
+ The answer:	11000011010011111
+your input is: 98754132
+ The answer:	101111000101101111001010100
+your input is: 1111118
+ The answer:	100001111010001001110
+your input is: 9874581
+ The answer:	100101101010110010010101
+
+program ended.
