@@ -2,10 +2,10 @@
  * @file translate.c
  * @author Eyal k
  * @date Dec1st 2025
- * @version 0.4
+ * @version 0.5
  *
  * @brief Converts decimal input to binary output
- * 
+ *
  * @details the program will get a decimal numbers as a string input and will pass it to the function transale_dec which will translate it to an int
  * and will print the decimal number as a binary number
  *
@@ -21,6 +21,7 @@ void translate_dec(char s[]);
 void printBinFromDec(unsigned int deci_num);
 
 #define MAX_BUFFER 10 /* max digits that the range of unsigned int can have*/
+#define STR_END_CHECK(arr,indx) (arr[indx] != '\0' && arr[indx] != '\n')
 
 /**
  * @brief uses a decimal number input from user or file to translate it to a binaric base
@@ -31,12 +32,12 @@ int main()
 {
     char buffer[MAX_BUFFER + 3]; /* the input from the user, has extra space for newline or '\0' */
     printf("Enter up to %d digits, to stop - Ctrl +D or EOF \n", (MAX_BUFFER - 1));
-    while (fgets(buffer, MAX_BUFFER +2, stdin) != NULL )
+    while (fgets(buffer, MAX_BUFFER + 2, stdin) != NULL)
     {
-        if(buffer[0] != '\0' && buffer[0] != '\n'){
+        if (STR_END_CHECK(buffer,0))
+        {
             translate_dec(buffer);
             printf("Enter up to %d digits, to stop - Ctrl +D or EOF \n", (MAX_BUFFER - 1));
-
         }
     }
     printf("\nprogram ended.\n");
@@ -51,9 +52,9 @@ int main()
  */
 void translate_dec(char s[])
 {
-    unsigned int i = 0, deci_num = 0;/*i - runner, the decimal number - from the string input*/
-    
-    while (s[i] != '\0' && s[i] != '\n')/* implimenting atoi*/
+    unsigned int i = 0, deci_num = 0; /*i - runner, the decimal number - from the string input*/
+
+    while (STR_END_CHECK(s,i)) /* implimenting atoi*/
     {
         if (isdigit(s[i]))
             deci_num = (s[i] - '0') + deci_num * 10;

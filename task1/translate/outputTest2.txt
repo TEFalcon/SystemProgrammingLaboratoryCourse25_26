@@ -1,0 +1,18 @@
+Enter up to 9 digits, to stop - Ctrl +D or EOF 
+your input is: 417355
+ The answer:	1100101111001001011
+Enter up to 9 digits, to stop - Ctrl +D or EOF 
+your input is: 174
+ The answer:	10101110
+Enter up to 9 digits, to stop - Ctrl +D or EOF 
+your input is: 85124
+ The answer:	10100110010000100
+Enter up to 9 digits, to stop - Ctrl +D or EOF 
+your input is: 3154852
+ The answer:	1100000010001110100100
+Enter up to 9 digits, to stop - Ctrl +D or EOF 
+your input is: 1234515
+ The answer:	100101101011001010011
+Enter up to 9 digits, to stop - Ctrl +D or EOF 
+
+program ended.
