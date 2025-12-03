@@ -1,0 +1,45 @@
+Enter up to 100 charecters for the text press enter to continue,To stop - Ctrl +D or EOF 
+*the text input is: viva
+now enter the pattern: 
+*the pattern input is: 
+
+*the index of the substring that matches the most is: 0
+
+Enter up to 100 charecters for the text press enter to continue,To stop - Ctrl +D or EOF 
+*the text input is: hello   jt program
+now enter the pattern: 
+*the pattern input is: t pam
+
+*the index of the substring that matches the most is: 9
+
+Enter up to 100 charecters for the text press enter to continue,To stop - Ctrl +D or EOF 
+*the text input is: testingtest
+now enter the pattern: 
+*the pattern input is: test
+
+*the index of the substring that matches the most is: 0
+
+Enter up to 100 charecters for the text press enter to continue,To stop - Ctrl +D or EOF 
+*the text input is: cocomputerco
+now enter the pattern: 
+*the pattern input is: comm
+
+*the index of the substring that matches the most is: 2
+
+Enter up to 100 charecters for the text press enter to continue,To stop - Ctrl +D or EOF 
+*the text input is: testing
+now enter the pattern: 
+*the pattern input is: abcd
+
+*the index of the substring that matches the most is: 0
+
+Enter up to 100 charecters for the text press enter to continue,To stop - Ctrl +D or EOF 
+*the text input is: banana
+now enter the pattern: 
+*the pattern input is: ana
+
+*the index of the substring that matches the most is: 1
+
+Enter up to 100 charecters for the text press enter to continue,To stop - Ctrl +D or EOF 
+
+program ended.

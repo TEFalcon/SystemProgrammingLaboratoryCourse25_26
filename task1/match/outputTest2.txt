@@ -1,0 +1,24 @@
+Enter up to 100 charecters for the text press enter to continue,To stop - Ctrl +D or EOF 
+*the text input is: helloloveai c dfk	c dfk
+now enter the pattern: 
+*the pattern input is: c hel
+
+*the index of the substring that matches the most is: 12
+
+Enter up to 100 charecters for the text press enter to continue,To stop - Ctrl +D or EOF 
+*the text input is: vviaaa
+now enter the pattern: 
+*the pattern input is: viva
+
+*the index of the substring that matches the most is: 1
+
+Enter up to 100 charecters for the text press enter to continue,To stop - Ctrl +D or EOF 
+*the text input is: abzzzabc
+now enter the pattern: 
+*the pattern input is: abcd
+
+*the index of the substring that matches the most is: 5
+
+Enter up to 100 charecters for the text press enter to continue,To stop - Ctrl +D or EOF 
+
+program ended.
